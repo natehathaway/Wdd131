@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+  --light: #F3E8EE;
+  --dark: #3B3561;
+  --accent: #81AE9D;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+  color: var(--dark);
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent);
+}
+
+/* Skip to content */
+.skiptocontent a {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--accent);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+.skiptocontent a:focus {
+  top: 0;
+}
+
+/* Header */
+header {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 4px solid var(--accent);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+nav {
+  border-top: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding: 0.5rem 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+nav a {
+  font-size: 1.1rem;
+  color: var(--light);
+}
+
+/* Main Layout */
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Article Layout */
+article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.details {
+  text-align: right;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+}
+
+.filters {
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px dashed var(--accent);
+  border-radius: 8px;
+  color: var(--dark);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--dark);
+  color: var(--light);
+}
