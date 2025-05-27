@@ -27,35 +27,33 @@
   </header>
 
   <main id="maincontent">
-    <section class="articles">
-      <article>
-        <div class="details">
-          <p>Jan 10, 2023</p>
-          <p>By Jane Doe</p>
-        </div>
-        <div class="content">
-          <h2>The Winds of Change</h2>
-          <img src="https://via.placeholder.com/150" alt="Winds of Change Book Cover" />
-          <p>A powerful novel exploring the depths of personal growth and transformation. This review takes a close look at the story's emotional arcs and compelling characters.</p>
-        </div>
-      </article>
-
-      <article>
-        <div class="details">
-          <p>Feb 25, 2023</p>
-          <p>By John Smith</p>
-        </div>
-        <div class="content">
-          <h2>Echoes of the Past</h2>
-          <img src="https://via.placeholder.com/150" alt="Echoes of the Past Book Cover" />
-          <p>This historical fiction dives deep into generational memory and loss. Discover how the author weaves the past into the present in this insightful review.</p>
-        </div>
-      </article>
+    <section class="articles" id="articles-container">
+      <!-- Articles will be injected here by JavaScript -->
     </section>
 
-    <aside class="filters">
-      <p>Filter form will go here</p>
-    </aside>
+  <aside class="filters">
+    <form id="filter-form">
+      <label for="author">Author:</label>
+      <select id="author" name="author">
+        <option value="all">All</option>
+        <option value="Angie Sage">Angie Sage</option>
+        <option value="Rick Riordan">Rick Riordan</option>
+        <option value="David Eddings">David Eddings</option>
+\
+      </select>
+
+      <label for="date">Date:</label>
+      <select id="date" name="date">
+        <option value="all">All</option>
+        <option value="July 5, 2022">July 2022</option>
+        <option value="December 12, 2021">Dec 2021</option>
+        <option value="Feb 12, 2022">Feb 2022</option>
+      </select>
+
+      <button type="submit">Filter</button>
+    </form>
+  </aside>
+
   </main>
 
   <footer>
